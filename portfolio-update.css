@@ -1,0 +1,28 @@
+/* Image-led folder browser, with explicit tracks to avoid percentage overflow. */
+#home-design.folder-gallery {
+  grid-template-columns:minmax(0, 2.2fr) minmax(0, 1fr);
+  grid-template-rows:64px minmax(0,1fr) 48px;
+  gap:0 5%; padding:22px 4%; min-height:600px;
+}
+#home-design .folder-tabs {grid-column:1/-1;grid-row:1;min-width:0}
+#home-design .folder-stage {grid-column:1;grid-row:2;min-width:0;display:grid!important;place-items:center;overflow:hidden!important;padding:0!important}
+#home-design .folder-copy {grid-column:2;grid-row:2;padding:0;min-width:0;align-self:center}
+#home-design .folder-copy h2 {font-size:clamp(30px,3.4vw,64px);margin:24px 0;line-height:1.15}
+#home-design .folder-navigation {grid-column:1;grid-row:3}
+#home-design .folder-stage .folder-card {display:block;width:100%!important;height:100%!important;max-height:100%;min-height:0!important;aspect-ratio:auto!important;padding:0!important;border-radius:20px;position:relative}
+#home-design .folder-stage .folder-card[hidden] {display:none!important}
+#home-design .folder-stage .folder-card img {width:100%!important;height:100%!important;object-fit:contain!important;display:block}
+#home-design .folder-stage .folder-card>span {position:absolute;left:20px;bottom:20px;background:#f4f4f1e8;padding:8px 12px;font-size:16px}
+#home-design .folder-stage:before,#home-design .folder-stage:after {display:none}
+#experience {scroll-margin-top:80px}
+#about.biography.wide-page {height:auto!important;max-height:none!important;min-height:720px!important;overflow:visible;align-items:start}
+#about .bio-record .resume-record:last-child {margin-top:0}
+@media(max-width:950px) {
+  #home-design.folder-gallery {height:auto;min-height:100svh;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto auto;gap:16px;padding:20px 5% 28px;overflow:visible}
+  #home-design .folder-tabs {grid-row:1;flex-wrap:wrap;gap:10px 18px}
+  #home-design .folder-stage {grid-column:1;grid-row:2;aspect-ratio:1;width:100%}
+  #home-design .folder-stage .folder-card {aspect-ratio:1!important;border-radius:18px}
+  #home-design .folder-copy {grid-column:1;grid-row:3;text-align:left;padding:8px 0}
+  #home-design .folder-copy h2 {font-size:clamp(28px,5vw,44px);margin:12px 0}
+  #home-design .folder-navigation {grid-column:1;grid-row:4;justify-content:flex-start}
+}
