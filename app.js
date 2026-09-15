@@ -79,6 +79,9 @@ function fillEase(){
  put('.sketch-slot','assets/ease/sketch.png','造型推演');
  const viewData=[['assets/ease/view-front.png','正视图'],['assets/ease/view-perspective.png','侧前视图'],['assets/ease/view-side.png','侧视图']];
  root.querySelectorAll('.orthographic .slot').forEach((el,j)=>{const item=viewData[j];if(!item)return;el.className='project-image';el.innerHTML='<img src="'+item[0]+'" alt="'+item[1]+'" loading="lazy"><span class="image-caption">'+item[1]+'</span>';});
+ put('.effect-spread > .slot','assets/ease/effect.png','人物使用效果展示');
+ put('.cmf-main','assets/ease/cmf.png','材质与配色');
+ put('.context-spread > .slot','assets/ease/context.png','会议办公应用场景');
  root.querySelector('.study-spread').previousElementSibling.innerHTML='<span>Form & Views<br>造型推演与三视图</span><span>解压办公椅</span><span>JACKIE / SELECTED WORKS</span>';
 }
 

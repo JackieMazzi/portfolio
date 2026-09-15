@@ -30,7 +30,10 @@
 /* Ease chair process images keep their source proportions and are never cropped. */
 #detail-content.has-ease-images .mood-spread .project-image,
 #detail-content.has-ease-images .sketch-slot,
-#detail-content.has-ease-images .orthographic .project-image {
+#detail-content.has-ease-images .orthographic .project-image,
+#detail-content.has-ease-images .effect-spread .project-image,
+#detail-content.has-ease-images .cmf-spread .project-image,
+#detail-content.has-ease-images .context-spread .project-image {
   background:#efeeeb;
   display:flex;
   align-items:center;
@@ -39,7 +42,10 @@
 }
 #detail-content.has-ease-images .mood-spread .project-image img,
 #detail-content.has-ease-images .sketch-slot img,
-#detail-content.has-ease-images .orthographic .project-image img {
+#detail-content.has-ease-images .orthographic .project-image img,
+#detail-content.has-ease-images .effect-spread .project-image img,
+#detail-content.has-ease-images .cmf-spread .project-image img,
+#detail-content.has-ease-images .context-spread .project-image img {
   width:100%!important;
   height:auto!important;
   max-height:100%!important;
