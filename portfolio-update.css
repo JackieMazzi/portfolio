@@ -54,3 +54,20 @@
 #detail-content.has-ease-images .image-caption {
   display:none!important;
 }
+#detail-content.has-softscape-images .mood-spread .project-image,
+#detail-content.has-softscape-images .sketch-slot,
+#detail-content.has-softscape-images .orthographic .project-image {
+  background:#efeeeb;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+#detail-content.has-softscape-images .mood-spread .project-image img,
+#detail-content.has-softscape-images .sketch-slot img,
+#detail-content.has-softscape-images .orthographic .project-image img {
+  width:100%!important;
+  height:auto!important;
+  max-height:100%!important;
+  object-fit:contain!important;
+}
