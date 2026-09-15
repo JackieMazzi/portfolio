@@ -27,3 +27,21 @@
   #home-design .folder-copy h2 {font-size:clamp(28px,5vw,44px);margin:12px 0}
   #home-design .folder-navigation {grid-column:1;grid-row:4;justify-content:flex-start}
 }
+/* Ease chair process images keep their source proportions and are never cropped. */
+#detail-content.has-ease-images .mood-spread .project-image,
+#detail-content.has-ease-images .sketch-slot,
+#detail-content.has-ease-images .orthographic .project-image {
+  background:#efeeeb;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+#detail-content.has-ease-images .mood-spread .project-image img,
+#detail-content.has-ease-images .sketch-slot img,
+#detail-content.has-ease-images .orthographic .project-image img {
+  width:100%!important;
+  height:auto!important;
+  max-height:100%!important;
+  object-fit:contain!important;
+}
